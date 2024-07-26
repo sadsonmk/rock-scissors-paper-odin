@@ -7,6 +7,9 @@ function getComputerChoice(arr) {
 
 function getHumanChoice() {
     let result = prompt("Please Enter your choice(Rock, Scissors, Paper): ");
+    if (result == '') {
+        result = 'rock';
+    }
     return result.toLowerCase();
 }
 
